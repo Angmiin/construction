@@ -17,101 +17,96 @@
   <div id="header"></div>
 
   <!-- Contact Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
-          Get In Touch
-        </h2>
-        <div class="w-20 h-1 bg-orange-400 mx-auto mb-4"></div>
-        <p class="text-gray-600 max-w-3xl mx-auto">
-          Ready to start your project? Contact us today for a free estimate or
-          to discuss your construction needs.
-        </p>
-      </div>
-
-      <div class="flex flex-col lg:flex-row gap-12">
-        <div class="lg:w-1/2">
-          <div class="bg-white rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-bold text-blue-800 mb-6">
-              Send Us a Message
-            </h3>
-            <form id="contactForm" class="space-y-4">
-              <div>
-                <label for="name" class="block text-gray-700 mb-2"
-                  >Your Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email" class="block text-gray-700 mb-2"
-                  >Email Address</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div>
-                <label for="phone" class="block text-gray-700 mb-2"
-                  >Phone Number</label
-                >
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                />
-              </div>
-              <div>
-                <label for="service" class="block text-gray-700 mb-2"
-                  >Service Needed</label
-                >
-                <select
-                  id="service"
-                  name="service"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="">Select a service</option>
-                  <option value="framing">Framing</option>
-                  <option value="insulation">Insulation</option>
-                  <option value="drywall">Drywall</option>
-                  <option value="fire-caulk">Fire Caulk</option>
-                  <option value="mud-tape">Mud and Tape</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label for="message" class="block text-gray-700 mb-2"
-                  >Project Details</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn-primary text-white font-bold py-3 px-6 rounded-full w-full"
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
+        Get In Touch
+      </h2>
+      <div class="w-20 h-1 bg-orange-400 mx-auto mb-4"></div>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Ready to start your project? Contact us today for a free estimate or
+        to discuss your construction needs.
+      </p>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-12">
+      <div class="lg:w-1/2">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-blue-800 mb-6">
+            Send Us a Message
+          </h3>
+          <form id="contactForm" class="space-y-4">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
+              <select
+                id="service"
+                name="service"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                Send Message
-              </button>
-            </form>
+                <option value="">Select a service</option>
+                <option value="framing">Framing</option>
+                <option value="insulation">Insulation</option>
+                <option value="drywall">Drywall</option>
+                <option value="fire-caulk">Fire Caulk</option>
+                <option value="mud-tape">Mud and Tape</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 mb-2">Project Details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn-primary bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full w-full transition"
+            >
+              Send Message
+            </button>
+          </form>
+          <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+            Thank you! Your message has been sent successfully.
+          </div>
+          <div id="formError" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-lg">
+            There was an error sending your message. Please try again later.
           </div>
         </div>
-
+      </div>
+      
         <div class="lg:w-1/2">
           <div class="bg-white rounded-lg shadow-lg p-8 h-full">
             <h3 class="text-2xl font-bold text-blue-800 mb-6">
@@ -199,21 +194,79 @@
   </section>
 
   <!-- Map Section -->
-  <div class="h-96 w-full">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321200.4922744454!2d-114.24454139999999!3d51.0276233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f9268a69e81%3A0xb1db5e64bd47661f!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1689876723456!5m2!1sen!2sca"
-      width="100%"
-      height="100%"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+<div class="h-96 w-full relative">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.138090554417!2d-113.9785836!3d51.1217873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371649e684bad0b%3A0x2d9c1a1c1b7d8b1e!2s1170%20Cornerstone%20Way%20NE%2C%20Calgary%2C%20AB%20T3N%201X8!5e0!3m2!1sen!2sca!4v1620000000000!5m2!1sen!2sca"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+  <div class="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-md">
+    <h3 class="font-bold text-blue-800">Construction Depot Ltd.</h3>
+    <p class="text-gray-600">1170 Cornerstone Way NE</p>
+    <p class="text-gray-600">Calgary, AB T3N 1X8</p>
   </div>
+</div>
 
   <!-- Footer -->
   <div id="footer"></div>
 
   <script src="scripts.js"></script>
+  
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const formData = new FormData(form);
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const successMsg = document.getElementById('formSuccess');
+  const errorMsg = document.getElementById('formError');
+  
+  // Disable submit button to prevent multiple submissions
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = 'Sending...';
+  
+  // Hide any previous messages
+  successMsg.classList.add('hidden');
+  errorMsg.classList.add('hidden');
+  
+  // Send form data using FormSubmit.co
+  fetch('https://formsubmit.co/ajax/sherpaming857@gmail.com', {
+    method: 'POST',
+    headers: { 
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(Object.fromEntries(formData))
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      // Show success message
+      successMsg.classList.remove('hidden');
+      // Reset form
+      form.reset();
+      // Scroll to success message
+      successMsg.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      throw new Error('Form submission failed');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    errorMsg.classList.remove('hidden');
+    errorMsg.scrollIntoView({ behavior: 'smooth' });
+  })
+  .finally(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = 'Send Message';
+  });
+});
+</script>
+
 </body>
 </html>

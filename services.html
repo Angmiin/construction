@@ -19,7 +19,7 @@
   <!-- Services Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
+      <div class="text-center mb-7">
         <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
           Our Specialized Services
         </h2>
@@ -89,7 +89,7 @@
 
         <!-- Service 3 -->
         <div class="service-card bg-white rounded-lg overflow-hidden p-6">
-          <div class="text-orange-400 text-4xl mb-4">
+          <div class="text-orange-400 text-4xl mb-2">
             <i class="fas fa-border-style"></i>
           </div>
           <h3 class="text-xl font-bold text-blue-800 mb-3">
@@ -117,6 +117,107 @@
       </div>
     </div>
   </section>
+
+  <!-- Gallery Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
+        Our Work Gallery
+      </h2>
+      <div class="w-20 h-1 bg-orange-400 mx-auto mb-4"></div>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        See examples of our quality craftsmanship and completed projects.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Gallery Items -->
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_4171.jpeg', 'Construction project 1')">
+        <img src="images/IMG_4171.jpeg" alt="Construction project 1" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_4172.jpeg', 'Construction project 2')">
+        <img src="images/IMG_4172.jpeg" alt="Construction project 2" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_4174.jpeg', 'Construction project 3')">
+        <img src="images/IMG_4174.jpeg" alt="Construction project 3" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_7617.jpeg', 'Construction project 4')">
+        <img src="images/IMG_7617.jpeg" alt="Construction project 4" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_4173.jpeg', 'Construction project 5')">
+        <img src="images/IMG_4173.jpeg" alt="Construction project 5" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_7619.jpeg', 'Construction project 6')">
+        <img src="images/IMG_7619.jpeg" alt="Construction project 6" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+      <div class="gallery-item overflow-hidden rounded-lg shadow-md cursor-pointer" onclick="openLightbox('images/IMG_7620.jpeg', 'Construction project 7')">
+        <img src="images/IMG_7620.jpeg" alt="Construction project 7" class="w-full h-48 object-cover hover:scale-110 transition duration-300">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden">
+  <div class="relative max-w-4xl w-full p-4">
+    <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white text-3xl hover:text-orange-400 transition">
+      <i class="fas fa-times"></i>
+    </button>
+    <img id="lightbox-img" src="" alt="" class="w-full max-h-[80vh] object-contain">
+    <p id="lightbox-caption" class="text-white text-center mt-2"></p>
+  </div>
+</div>
+
+<script>
+  // Lightbox functionality
+  function openLightbox(src, alt) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightboxCaption.textContent = alt;
+    lightbox.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.add('hidden');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+
+  // Close lightbox when clicking outside the image
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) {
+      closeLightbox();
+    }
+  });
+
+  // Close lightbox with Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !document.getElementById('lightbox').classList.contains('hidden')) {
+      closeLightbox();
+    }
+  });
+</script>
+
+<style>
+  /* Add smooth transition for lightbox */
+  #lightbox {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Ensure the lightbox image is properly centered */
+  #lightbox > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
+
 
   <!-- FAQ Section -->
   <section class="py-16 bg-white">
